@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .square-diagram {
   position: relative; /* Make the container relative for positioning */
-  padding: 5%;
+  padding: 10%;
 }
 
 .data-text {
