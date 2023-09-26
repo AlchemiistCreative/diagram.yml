@@ -3,6 +3,7 @@
 import Editor from '../components/editor.vue';
 import Diagram from '../components/diagram.vue';
 import Nav from '../components/nav.vue'
+import Footer from '../components/footer.vue'
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Nav from '../components/nav.vue'
     </div>
   </div>
 </div>
+<Footer />
 </template>
 
 <script>
@@ -43,7 +45,6 @@ export default {
 <style scoped>
 .diagram-container {
   width: 100%; 
-  height: 100vh; 
   overflow: hidden;
   margin-top: 4vw;
 }

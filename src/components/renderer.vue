@@ -5,14 +5,13 @@
       <!-- Diagram Column -->
       <div class="column is-full">
         <div class="diagram-object has-text-centered">
-            <ul>
-              <li v-for="(diagram, index) in data.diagrams" :key="'diagram-' + index" class="">
-                <RecursiveDiagram :data="diagram.parent" />
-                <Links :data="data" />
-              </li>
-            </ul>            
-          </div>
-
+          <ul>
+            <li v-for="(diagram, index) in data.diagrams" :key="'diagram-' + index" class="">
+              <RecursiveDiagram :data="diagram.parent" />
+              <Links :data="data" />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -21,6 +20,7 @@
 <script>
 import RecursiveDiagram from './RecursiveDiagram.vue';
 import Links from './links.vue';
+
 export default {
   props: {
     data: Object,
@@ -31,7 +31,6 @@ export default {
   },
 };
 </script>
-
 <style scoped>
 .renderer {
   display: flex;
@@ -47,15 +46,14 @@ export default {
   align-items: center;
   margin: 15%;
   overflow: hidden;
-  max-width: 80vw; /* Set a maximum width for the diagram content */
-  max-height: 80vh; /* Set a maximum height for the diagram content */
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .inner-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Add your CSS styles for the inner content here */
 }
 
 .link-container {
@@ -76,5 +74,4 @@ export default {
   pointer-events: none;
 }
 
-/* Add your CSS styles for the top-level diagram elements here */
 </style>

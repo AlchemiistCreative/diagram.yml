@@ -3,8 +3,9 @@
 <section>
   <div>
     <div class="container is-widescreen ">
+      
       <div class="box-right">
-    
+        <button @click="exportDiagram()" class="button is-primary is-rounded  is-outlined">Export as PNG</button>
         <h1 class="title has-text-centered">Diagram</h1>
         <Renderer :data="parsedDataArray" />
       </div>
@@ -15,7 +16,7 @@
   
   <script>
   import Renderer from './renderer.vue';
-  
+  import html2canvas from 'html2canvas'
   export default {
     components: {
       Renderer
@@ -34,12 +35,32 @@
           return [];
         }
       }
-    }
+    },
+    methods: {
+    async exportDiagram() {
+      const diagramContainer = this.$el.querySelector('.diagram-object');
+
+      const canvas = await html2canvas(diagramContainer);
+
+      const imageDataUrl = canvas.toDataURL('image/png');
+
+      const downloadLink = document.createElement('a');
+      downloadLink.href = imageDataUrl;
+      downloadLink.download = 'diagram.png';
+      downloadLink.textContent = 'Download Diagram';
+
+      downloadLink.click();
+    },
+  },
   };
   </script>
 
 <style scoped>
-
+.button {
+  float: right;
+  margin: 10px;
+  position: absolute;
+}
 .box-right {
   min-height: 36vw;
   background-color: white;

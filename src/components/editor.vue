@@ -1,4 +1,3 @@
-box of editor and box of diagram components are not aligned, why? can you fix this?
 <template>
     <section>
       <div>
