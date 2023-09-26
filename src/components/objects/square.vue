@@ -28,7 +28,7 @@ export default {
 <style scoped>
 .square-diagram {
   position: relative; /* Make the container relative for positioning */
-  padding: 10%;
+  padding: 5%;
 }
 
 .data-text {
@@ -53,18 +53,18 @@ export default {
 
 /* Specific selectors for each size */
 .square-diagram.small {
-  width: 3vw; /* Adjust the width as needed */
-  height: 3vw; /* Adjust the height as needed */
+  width: 4vw; /* Adjust the width as needed */
+  height: 4vw; /* Adjust the height as needed */
 }
 
 .square-diagram.medium {
-  width: 5vw; /* Adjust the width as needed */
-  height: 5vw; /* Adjust the height as needed */
+  width: 6vw; /* Adjust the width as needed */
+  height: 6vw; /* Adjust the height as needed */
 }
 
 .square-diagram.big {
-  width: 7vw; /* Adjust the width as needed */
-  height: 7vw; /* Adjust the height as needed */
+  width: 8vw; /* Adjust the width as needed */
+  height: 8vw; /* Adjust the height as needed */
 }
 
 .anchor-point {

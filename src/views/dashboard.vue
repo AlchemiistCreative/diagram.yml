@@ -1,3 +1,4 @@
+
 <script setup>
 import Editor from '../components/editor.vue';
 import Diagram from '../components/diagram.vue';
@@ -44,7 +45,16 @@ export default {
   width: 100%; 
   height: 100vh; 
   overflow: hidden;
-  margin-top: -5vw;
+  margin-top: 4vw;
 }
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column; /* Change to column layout on smaller screens */
+  }
 
+  .diagram-container {
+    min-height: 30vh; /* Adjust minimum height for smaller screens */
+    overflow: auto;
+  }
+}
 </style>

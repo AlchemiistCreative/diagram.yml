@@ -1,11 +1,11 @@
 <template>
  
-<section class="hero is-fullheight">
-  <div class="hero-body has-text-centered">
-    <div class="container is-fluid ">
-      <div class="box">
+<section>
+  <div>
+    <div class="container is-widescreen ">
+      <div class="box-right">
     
-        <h1 class="title">Diagram</h1>
+        <h1 class="title has-text-centered">Diagram</h1>
         <Renderer :data="parsedDataArray" />
       </div>
     </div>
@@ -40,8 +40,11 @@
 
 <style scoped>
 
-.box {
-  min-height: 40vw;
-  padding: 1.5rem; /* Add some padding to the box for spacing */
+.box-right {
+  min-height: 36vw;
+  background-color: white;
+  box-shadow: 30%;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
 </style>

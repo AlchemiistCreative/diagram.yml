@@ -1,16 +1,16 @@
 box of editor and box of diagram components are not aligned, why? can you fix this?
 <template>
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container is-fluid">
-          <div class="box">
+    <section>
+      <div>
+        <div class="container is-widescreen">
+          <div class="box-left">
               
-                <h1 class="title">YAML Editor</h1>
+                <h1 class="title has-text-centered">YAML Editor</h1>
                 <!-- Replace the textarea with vue-codemirror -->
                 <codemirror
                     v-model="yamlContent"
                     placeholder="Code goes here..."
-                    :style="{ height: '35vw;' }"
+                    :style="{ height: '31vw;' }"
                     :autofocus="true"
                     :indent-with-tab="true"
                     :tab-size="2"
@@ -92,10 +92,11 @@ diagrams:
   <style scoped>
   /* Utilisez les classes Bulma ici pour personnaliser le style si nécessaire */
 
-  .box {
-    min-height: 40vw;
-    padding: 1.5rem; /* Add some padding to the boxes for spacing */
-  }
-
+  .box-left {
+  min-height: 36vw;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
   </style>
   

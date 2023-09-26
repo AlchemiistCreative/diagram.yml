@@ -53,18 +53,18 @@ export default {
 
 /* Specific selectors for each size */
 .circle-diagram.small {
-  width: 3vw; /* Adjust the width as needed */
-  height: 3vw; /* Adjust the height as needed */
+  width: 4vw; /* Adjust the width as needed */
+  height: 4vw; /* Adjust the height as needed */
 }
 
 .circle-diagram.medium {
-  width: 5vw; /* Adjust the width as needed */
-  height: 5vw; /* Adjust the height as needed */
+  width: 6vw; /* Adjust the width as needed */
+  height: 6vw; /* Adjust the height as needed */
 }
 
 .circle-diagram.big {
-  width: 7vw; /* Adjust the width as needed */
-  height: 7vw; /* Adjust the height as needed */
+  width: 8vw; /* Adjust the width as needed */
+  height: 8vw; /* Adjust the height as needed */
 }
 
 .anchor-point {
