@@ -2,7 +2,7 @@
  
 <section>
   <div>
-    <div class="container is-widescreen ">
+    <div class="container is-widescreen">
       
       <div class="box-right">
         <button @click="exportDiagram()" class="button is-primary is-rounded  is-outlined">Export as PNG</button>
@@ -60,12 +60,24 @@
   float: right;
   margin: 10px;
   position: absolute;
+  max-width: 100px;
+  font-size: small;
 }
 .box-right {
-  min-height: 36vw;
+  min-height: 35vw;
   background-color: white;
-  box-shadow: 30%;
   border-radius: 6px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.02);
 }
+
+@media only screen and (max-width: 768px) {
+  .button {
+    max-width: 80px;
+    font-size:x-small;
+    z-index: 1;
+    margin: 15px;
+
+  }
+}
+
 </style>

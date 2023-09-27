@@ -45,8 +45,7 @@ export default {
 <style scoped>
 .diagram-container {
   width: 100%; 
-  overflow: hidden;
-  margin-top: 4vw;
+  margin-top: 3vw;
 }
 @media (max-width: 768px) {
   .columns {
